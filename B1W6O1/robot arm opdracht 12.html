@@ -24,21 +24,19 @@
             var blok = robotArm.scan()
 
             if (blok === "red") {
-                    for (var rechts = 1; rechts <= 10-j; rechts++) {
+                for (var rechts = 1; rechts <= 10-j; rechts++) {
                                 robotArm.moveRight();
-                        }
+                }
                             robotArm.drop(); 
-                    for (var links = 1; links <= 9-j; links++) {
+                for (var links = 1; links <= 9-j; links++) {
                                 robotArm.moveLeft(); 
-                        }    
+                }    
             }
                 
-            else {
+                else {
                 robotArm.drop();
                 robotArm.moveRight();
-                }
-
-                
+                }    
             }        
                 
 
